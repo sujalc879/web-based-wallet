@@ -16,5 +16,5 @@ RUN bun run build
 # Stage 2: Deploy production assets to Nginx
 FROM nginx:alpine
 COPY --from=builder /usr/src/app/dist /usr/share/nginx/html
-EXPOSE 3000
+EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
