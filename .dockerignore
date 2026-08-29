@@ -1,0 +1,38 @@
+# Ignore version control metadata
+.git
+.gitignore
+.hg
+.svn
+
+# Ignore heavy dependency folders
+node_modules/
+jspm_packages/
+web_modules/
+vendor/
+
+# Ignore local environment variables and secrets
+.env
+*.pem
+*.key
+secrets.json
+
+# Ignore build artifacts, caches, and logs
+dist/
+build/
+.npm
+.eslintcache
+*.log
+npm-debug.log*
+
+# Ignore OS-generated files
+.DS_Store
+Thumbs.db
+
+# Optional: Ignore documentation but keep the README
+README.md
+docs/
+
+# Optional: Ignore Docker-specific configuration files
+Dockerfile
+docker-compose.yml
+.dockerignore
